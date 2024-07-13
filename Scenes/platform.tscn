@@ -50,5 +50,6 @@ autoplay = "on"
 frame_progress = 0.67703
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
 position = Vector2(-0.5, -2)
 shape = SubResource("RectangleShape2D_to0ff")

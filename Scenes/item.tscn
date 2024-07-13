@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://da7gkm8qn1d4r"]
 
 [ext_resource type="Texture2D" uid="uid://u6hmk33l6vsk" path="res://Assets/Fruits/Apple.png" id="1_8fn3e"]
-[ext_resource type="Script" path="res://Script/item.cs" id="1_n5vam"]
+[ext_resource type="Script" path="res://Script/item.cs" id="1_pe68l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n8wmt"]
 atlas = ExtResource("1_8fn3e")
@@ -135,7 +135,7 @@ radius = 5.0
 
 [node name="Area2D" type="Area2D"]
 texture_filter = 1
-script = ExtResource("1_n5vam")
+script = ExtResource("1_pe68l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sglfu")
@@ -144,3 +144,5 @@ frame_progress = 0.480697
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_gdfc0")
+
+[connection signal="body_entered" from="." to="." method="on_body_entered"]
