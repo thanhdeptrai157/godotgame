@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqqioum65l6ig"]
+
+[ext_resource type="Script" path="res://Script/ChangeScene.cs" id="1_jlbvn"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xk37s"]
+a = Vector2(1, 49)
+b = Vector2(1, -46)
+
+[node name="Change" type="Area2D"]
+position = Vector2(1, 0)
+script = ExtResource("1_jlbvn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 0)
+shape = SubResource("SegmentShape2D_xk37s")
+
+[connection signal="body_entered" from="." to="." method="on_body_entered"]

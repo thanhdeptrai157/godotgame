@@ -53,3 +53,4 @@ frame_progress = 0.67703
 texture_filter = 1
 position = Vector2(-0.5, -2)
 shape = SubResource("RectangleShape2D_to0ff")
+one_way_collision = true

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cls3pcgbypcfd"]
+
+[ext_resource type="Texture2D" uid="uid://j15mxfx5ovxv" path="res://Assets/Particle/Dust Particle.png" id="1_g2d42"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4u10t"]
+atlas = ExtResource("1_g2d42")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_koul2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4u10t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="RunEffect" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_koul2")

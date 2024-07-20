@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://da7gkm8qn1d4r"]
+[gd_scene load_steps=23 format=3 uid="uid://da7gkm8qn1d4r"]
 
 [ext_resource type="Texture2D" uid="uid://u6hmk33l6vsk" path="res://Assets/Fruits/Apple.png" id="1_8fn3e"]
 [ext_resource type="Script" path="res://Script/item.cs" id="1_pe68l"]
+[ext_resource type="PackedScene" uid="uid://cxgoseqwsh0ua" path="res://Scenes/partical.tscn" id="2_kt2mn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n8wmt"]
 atlas = ExtResource("1_8fn3e")
@@ -136,6 +137,7 @@ radius = 5.0
 [node name="Area2D" type="Area2D"]
 texture_filter = 1
 script = ExtResource("1_pe68l")
+Particle = ExtResource("2_kt2mn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sglfu")
